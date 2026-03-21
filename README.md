@@ -19,4 +19,8 @@ O sistema lê os dados de telemetria, compara com faixas seguras e decide se o v
 - Execute o comando: python telemetria_espacial.py
 
 # Execução
-![print telainicial](/assets/print.png)  
+![print telainicial](/assets/print-um.png)  
+![print telainicial](/assets/print-dois.png)  
+![print telainicial](/assets/print-tres.png)  
+![print telainicial](/assets/print-quatro.png)  
+![print telainicial](/assets/print-cinco.png)  
