@@ -16,7 +16,7 @@ O sistema lê os dados de telemetria, compara com faixas seguras e decide se o v
 # Como Executar o Código
 - Salve o arquivo
 - Abra o terminal
-- Execute o comando python.py
+- Execute o comando: python.py
 
 # Execução
 ![print telainicial](/assets/print.png)  
