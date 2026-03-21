@@ -20,7 +20,7 @@ O sistema lê os dados de telemetria, compara com faixas seguras e decide se o v
 
 # Execução
 ![print telainicial](/assets/print-um.png) 
-# __________________________________________________________________________________________________________________________________________________________________
+# 
 ![print telainicial](/assets/print-dois.png)  
 ![print telainicial](/assets/print-tres.png)  
 ![print telainicial](/assets/print-quatro.png)  
