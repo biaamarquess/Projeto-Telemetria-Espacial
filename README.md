@@ -10,21 +10,7 @@ Este projeto é um sistema de verificação de telemetria para lançamentos espa
 - Pressão dos tanques de combustível
 - Status dos módulos críticos
 
-# O que ele faz:
-O sistema lê os dados de telemetria, compara com faixas seguras e decide se o veículo está “PRONTO PARA DECOLAR” ou se a “DECOLAGEM FOI ABORTADA”. Também calcula a autonomia energética, faz uma análise simulada por IA para identificar anomalias e apresenta uma reflexão sobre ética e sustentabilidade.
-
 # Como Executar o Código
 - Salve o arquivo
 - Abra o terminal
 - Execute o comando: python telemetria_espacial.py
-
-# Execução no terminal
-![print telainicial](/assets/print-um.png) 
-# 
-![print telainicial](/assets/print-dois.png) 
-#
-![print telainicial](/assets/print-tres.png)
-#
-![print telainicial](/assets/print-quatroo.png)  
-#
-![print telainicial](/assets/print-cinco.png)  
