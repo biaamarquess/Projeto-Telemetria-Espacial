@@ -23,7 +23,7 @@ class Telemetria:
         print("="*50)
         print(f"Temperatura interna: {self.temp_interna:.1f} °C")
         print(f"Temperatura externa: {self.temp_externa:.1f} °C")
-        print(f"Integridade estrutural: {self.integridade} {self.integridade}")
+        print(f"Integridade estrutural: {self.integridade}")
         print(f"Energia: {self.energia_percent:.1f}%")
         print(f"Pressão dos tanques: {self.pressao_tanques:.2f} bar")
         modulos_ok = sum(self.modulos)
@@ -118,67 +118,6 @@ class Telemetria:
             print("Energia suficiente para decolagem com margem de segurança")
         else:
             print("ALERTA: Energia insuficiente para decolagem")
-    
-    def analise_ia(self):
-        """Análise por IA (simulada)"""
-        
-        print("\n" + "="*50)
-        print("ANÁLISE POR IA")
-        print("="*50)
-        
-        # Classificação
-        print("\nCLASSIFICAÇÃO DOS DADOS:")
-        
-        if self.temp_interna < 20:
-            print("   • Temperatura interna: BAIXA")
-        elif self.temp_interna > 30:
-            print("   • Temperatura interna: ALTA")
-        else:
-            print("   • Temperatura interna: NORMAL")
-        
-        if self.energia_percent >= 95:
-            print("   • Energia: ÓTIMA")
-        elif self.energia_percent >= 85:
-            print("   • Energia: ADEQUADA")
-        else:
-            print("   • Energia: CRÍTICA")
-        
-        # Anomalias
-        print("\nANOMALIAS IDENTIFICADAS:")
-        anomalias = False
-        
-        if self.temp_interna > 30 and self.temp_externa < -30:
-            print("   • Grande diferencial de temperatura")
-            anomalias = True
-        
-        if self.pressao_tanques < 2.0:
-            print("   • Pressão baixa - Possível vazamento")
-            anomalias = True
-        elif self.pressao_tanques > 3.0:
-            print("   • Pressão alta - Risco de sobrepressão")
-            anomalias = True
-        
-        if any(m == 0 for m in self.modulos):
-            print("   • Falha em módulo crítico")
-            anomalias = True
-        
-        if not anomalias:
-            print("   • Nenhuma anomalia detectada")
-        
-        # Riscos
-        print("\nSUGESTÕES DE RISCO:")
-        riscos = False
-        
-        if self.energia_percent < 85:
-            print("   • Risco: Autonomia insuficiente")
-            riscos = True
-        
-        if self.integridade == 0:
-            print("   • Risco: Falha estrutural crítica")
-            riscos = True
-        
-        if not riscos:
-            print("   • Nenhum risco iminente")
 
 
 # FUNÇÕES AUXILIARES
@@ -233,29 +172,6 @@ def gerar_dados_simulados(pronto=True):
     
     return dados
 
-def exibir_reflexao():
-    """Exibe reflexão sobre ética e sustentabilidade"""
-    
-    print("\n" + "="*60)
-    print("REFLEXÃO CRÍTICA")
-    print("="*60)
-    
-    print("""
-1. ÉTICA E RESPONSABILIDADE:
-   A decisão de lançamento envolve vidas humanas e altos investimentos.
-   Priorizar a segurança sobre prazos é fundamental.
-
-2. IMPACTO SOCIAL:
-   - Positivo: Avanços tecnológicos, satélites, monitoramento climático
-   - Negativo: Desigualdade de acesso, custos elevados
-
-3. SUSTENTABILIDADE:
-   - Desafio: Lixo espacial (>34.000 detritos)
-   - Soluções: Foguetes reutilizáveis, combustíveis verdes
-    """)
-    
-    print("="*60)
-
 def menu():
     """Exibe o menu principal"""
     print("\n" + "="*60)
@@ -282,8 +198,6 @@ def main():
             telemetria = Telemetria(dados)
             telemetria.executar_verificacao()
             telemetria.analise_energetica()
-            telemetria.analise_ia()
-            exibir_reflexao()
             
             input("\nPressione ENTER para continuar...")
         
@@ -293,8 +207,6 @@ def main():
             telemetria = Telemetria(dados)
             telemetria.executar_verificacao()
             telemetria.analise_energetica()
-            telemetria.analise_ia()
-            exibir_reflexao()
             
             input("\nPressione ENTER para continuar...")
         
@@ -303,8 +215,6 @@ def main():
             telemetria = Telemetria(dados)
             telemetria.executar_verificacao()
             telemetria.analise_energetica()
-            telemetria.analise_ia()
-            exibir_reflexao()
             
             input("\nPressione ENTER para continuar...")
         
