@@ -14,3 +14,9 @@ Este projeto desenvolve um sistema de verificação para o pré-lançamento da n
 - Salve o arquivo
 - Abra o terminal
 - Execute o comando: python telemetria_espacial.py
+
+# Resultado Final
+![print telainicial](/assets/parte-um.png)
+![print telainicial](/assets/parte-dois.png)  
+![print telainicial](/assets/parte-tres.png)  
+![print telainicial](/assets/parte-quatro.png)  
