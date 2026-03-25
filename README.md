@@ -5,8 +5,8 @@ Este projeto desenvolve um sistema de verificação para o pré-lançamento da n
 
 # O que o sistema verifica:
 - Temperatura interna e externa
-- Integridade estrutural (se está ok ou com falha)
-- Nível de energia da bateria]
+- Integridade estrutural 
+- Nível de energia da bateria
 - Pressão dos tanques de combustível
 - Status dos módulos críticos
 
